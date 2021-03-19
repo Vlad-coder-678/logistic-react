@@ -1,0 +1,97 @@
+/* -- section testimonial slider -- */
+
+.testimonial {
+  min-height: 500px;
+  background-color: #68165e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.75) inset,
+    0 0 30px 30px rgba(0, 0, 0, 0.75) inset;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slick-initialized .slick-slide,
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slider__img img {
+  height: 100%;
+}
+.slider__testimonial {
+  max-width: 90%;
+  text-transform: uppercase;
+  text-indent: 20px;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-weight: 500;
+  margin: 20px auto;
+  font-family: "Roboto", sans-serif;
+}
+.slider__autor {
+  line-height: 24px;
+  font-size: 18px;
+  color: #d3d2d2;
+  cursor: default;
+  margin-bottom: 50px;
+}
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.slick-btn:hover {
+  background-color: #ffc222;
+}
+.slick-btn::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "icomoon";
+  color: #fff;
+}
+.slick-prev {
+  left: 10px;
+}
+.slick-prev::after {
+  content: "\f104";
+}
+.slick-next {
+  right: 10px;
+}
+.slick-next::after {
+  content: "\f105";
+}
+
+@media (max-width: 768px) {
+  .slider__testimonial {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+  }
+}
