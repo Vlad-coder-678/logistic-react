@@ -1,8 +1,5 @@
 @import "./pages/headerSection";
+@import "./components/burgerMenuComponent";
+@import "./components/socialComponent";
 @import "./pages/homePage/homePage";
 @import "./components/buttonContactsComponent";
-
-.container {
-  max-width: 1200px;
-  margin: 0px auto;
-}

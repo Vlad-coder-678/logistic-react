@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialComponent } from "../components";
+import { SocialComponent, BurgerMenuComponent } from "../components";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
         </div>
         <div className="header__content">
           <div className="header__contentLeft">
-            <p className="something">menu</p>
+            <BurgerMenuComponent />
           </div>
           <div className="header__contentRight">
             <SocialComponent />
