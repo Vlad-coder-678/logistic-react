@@ -1,8 +1,8 @@
 import React from "react";
 import {
   FirstScreenSection,
+  TestimonialSection,
   StockAndCounterSection,
-  TrustInfoSection,
   SchemeOfWorkSection,
   AppealSection,
 } from "./sections";
@@ -11,8 +11,8 @@ const HomePage = () => {
   return (
     <div>
       <FirstScreenSection />
+      <TestimonialSection />
       <StockAndCounterSection />
-      <TrustInfoSection />
       <SchemeOfWorkSection />
       <AppealSection />
     </div>

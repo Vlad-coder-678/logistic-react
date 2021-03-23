@@ -1,5 +1,5 @@
 import React from "react";
-import firstScreenImage from "../../../assets/images/firstScreenImage.jpeg";
+import firstScreenImage from "../../../assets/images/firstScreenSection/firstScreenImage.jpeg";
 import { ButtonContactsComponent } from "../../../components";
 
 const FirstScreenSection = () => {
