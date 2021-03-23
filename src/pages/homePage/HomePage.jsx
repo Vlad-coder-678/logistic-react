@@ -3,7 +3,7 @@ import {
   FirstScreenSection,
   TestimonialSection,
   SchemeOfWorkSection,
-  StockAndCounterSection,
+  // StockAndCounterSection,
   AppealSection,
 } from "./sections";
 
@@ -13,7 +13,7 @@ const HomePage = () => {
       <FirstScreenSection />
       <TestimonialSection />
       <SchemeOfWorkSection />
-      <StockAndCounterSection />
+      {/* <StockAndCounterSection /> */}
       <AppealSection />
     </div>
   );
