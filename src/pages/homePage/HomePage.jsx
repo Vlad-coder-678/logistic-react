@@ -2,8 +2,8 @@ import React from "react";
 import {
   FirstScreenSection,
   TestimonialSection,
-  StockAndCounterSection,
   SchemeOfWorkSection,
+  StockAndCounterSection,
   AppealSection,
 } from "./sections";
 
@@ -12,8 +12,8 @@ const HomePage = () => {
     <div>
       <FirstScreenSection />
       <TestimonialSection />
-      <StockAndCounterSection />
       <SchemeOfWorkSection />
+      <StockAndCounterSection />
       <AppealSection />
     </div>
   );

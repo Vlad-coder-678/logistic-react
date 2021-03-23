@@ -1,27 +1,61 @@
 import React from "react";
+import {
+  schemeOfWork__destination,
+  schemeOfWork__arrow,
+  schemeOfWork__map,
+  schemeOfWork__calculator,
+  schemeOfWork__handShake,
+} from "../../../assets/images/schemeOfWorkSection";
 
 const SchemeOfWorkSection = () => {
   return (
-    <div className="section__firstScreen">
+    <div className="shemeOfWork__section">
       <div className="container">
-        <div className="firstScreen__title">
-          <h2>Комфорт и удобство</h2>
-        </div>
-        <div className="firstScreen__content">
-          <div className="content__block">
-            <div className="content__left">
-              <img
-                src="https://cdn.kodixauto.ru/media/resized_image/webp/5ece4ec5b50c3200011cc872/1024/0"
-                alt="car's ring"
-              />
+        <div className="shemeOfWork__contentWrapper">
+          <div className="shemeOfWork__title">
+            <h2>Как мы работаем</h2>
+          </div>
+          <div className="shemeOfWork__content">
+            <div className="content__block content__block__1">
+              <div className="content__top">
+                <img src={schemeOfWork__destination} alt="destination" />
+              </div>
+              <div className="content__bottom">
+                <h3>Выбор пункта назначения</h3>
+              </div>
             </div>
-            <div className="content__right">
-              <h3>Пассажирские сиденья с регулируемым наклоном спинки</h3>
-              <p>
-                С откидывающимися спинками и подлокотниками, установленными в
-                стандартной комплектации «Тренд», Ваши пассажиры могут
-                расслабиться и наслаждаться путешествием.
-              </p>
+            <div className="content__arrow">
+              <img src={schemeOfWork__arrow} alt="arrow" />
+            </div>
+            <div className="content__block content__block__2">
+              <div className="content__top">
+                <img src={schemeOfWork__map} alt="map" />
+              </div>
+              <div className="content__bottom">
+                <h3>Составление маршрута движения, количества пассажиров</h3>
+              </div>
+            </div>
+            <div className="content__arrow">
+              <img src={schemeOfWork__arrow} alt="arrow" />
+            </div>
+            <div className="content__block content__block__3">
+              <div className="content__top">
+                <img src={schemeOfWork__calculator} alt="calculate" />
+              </div>
+              <div className="content__bottom">
+                <h3>Расчёт стоимости услуги</h3>
+              </div>
+            </div>
+            <div className="content__arrow">
+              <img src={schemeOfWork__arrow} alt="arrow" />
+            </div>
+            <div className="content__block content__block__4">
+              <div className="content__top">
+                <img src={schemeOfWork__handShake} alt="handshake" />
+              </div>
+              <div className="content__bottom">
+                <h3>Оформление услуги</h3>
+              </div>
             </div>
           </div>
         </div>
