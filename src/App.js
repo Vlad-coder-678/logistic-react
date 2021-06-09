@@ -1,21 +1,33 @@
 import React from "react";
-// import { Link, Route } from "react-router-dom";
-import { HomePage, HeaderSection, FooterSection } from "./pages";
+import {
+  HeaderSection,
+  FirstScreenSection,
+  ServicesSection,
+  AttainmentSection,
+  PriceSection,
+  TestimonialsSection,
+  GallerySection,
+  // SchemeOfWorkSection,
+  // StockAndCounterSection,
+  AppealSection,
+} from "./sections";
 
 const App = () => {
   return (
     <div>
       <HeaderSection />
       <main>
-        <HomePage />
-        {/* <nav className="navApp">
-          <Link to="/">Home page</Link>
-          <Link to="/contacts">Contacts</Link>
-        </nav>
-        <Route exact={true} path="/" component={HomePage}></Route>
-        <Route path="/contacts" component={ContactsPage}></Route> */}
+        <FirstScreenSection />
+        <ServicesSection />
+        <AttainmentSection />
+        <PriceSection />
+        <TestimonialsSection />
+        <GallerySection />
+        {/* <SchemeOfWorkSection /> */}
+        {/* <StockAndCounterSection /> */}
+        <AppealSection />
+        {/* <FooterSection /> */}
       </main>
-      <FooterSection />
     </div>
   );
 };

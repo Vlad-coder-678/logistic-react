@@ -1,0 +1,16 @@
+export { default as ourTransport_1 } from "./avito_1.jpg";
+export { default as ourTransport_2 } from "./avito_2.jpg";
+export { default as ourTransport_3 } from "./avito_3.jpg";
+export { default as ourTransport_4 } from "./avito_4.jpg";
+export { default as ourTransport_5 } from "./avito_5.jpg";
+export { default as ourTransport_6 } from "./avito_6.jpg";
+export { default as ourTransport_7 } from "./avito_7.jpg";
+export { default as ourTransport_8 } from "./avito_8.jpg";
+export { default as ourTransport_9 } from "./avito_9.jpg";
+export { default as ourTransport_10 } from "./avito_10.jpg";
+export { default as ourTransport_11 } from "./sprinter_1.jpg";
+export { default as ourTransport_12 } from "./sprinter_2.jpg";
+export { default as ourTransport_13 } from "./sprinter_3.jpg";
+export { default as ourTransport_14 } from "./sprinter_4.jpg";
+export { default as ourTransport_15 } from "./sprinter_5.jpg";
+export { default as ourTransport_16 } from "./sprinter_6.jpg";
