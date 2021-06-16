@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/logistic-react/static/js/main.3528aa33.chunk.js",
-    "main.js.map": "/logistic-react/static/js/main.3528aa33.chunk.js.map",
+    "main.js": "/logistic-react/static/js/main.717928a6.chunk.js",
+    "main.js.map": "/logistic-react/static/js/main.717928a6.chunk.js.map",
     "runtime-main.js": "/logistic-react/static/js/runtime-main.a38e167f.js",
     "runtime-main.js.map": "/logistic-react/static/js/runtime-main.a38e167f.js.map",
-    "static/js/2.cec128a5.chunk.js": "/logistic-react/static/js/2.cec128a5.chunk.js",
-    "static/js/2.cec128a5.chunk.js.map": "/logistic-react/static/js/2.cec128a5.chunk.js.map",
+    "static/js/2.a8935a1a.chunk.js": "/logistic-react/static/js/2.a8935a1a.chunk.js",
+    "static/js/2.a8935a1a.chunk.js.map": "/logistic-react/static/js/2.a8935a1a.chunk.js.map",
     "index.html": "/logistic-react/index.html",
-    "static/js/2.cec128a5.chunk.js.LICENSE.txt": "/logistic-react/static/js/2.cec128a5.chunk.js.LICENSE.txt",
+    "static/js/2.a8935a1a.chunk.js.LICENSE.txt": "/logistic-react/static/js/2.a8935a1a.chunk.js.LICENSE.txt",
     "static/media/Photo_1.43d76957.jpg": "/logistic-react/static/media/Photo_1.43d76957.jpg",
     "static/media/Photo_2.6bd0e5f6.jpg": "/logistic-react/static/media/Photo_2.6bd0e5f6.jpg",
     "static/media/Photo_3.207c16a1.jpg": "/logistic-react/static/media/Photo_3.207c16a1.jpg",
@@ -30,8 +30,6 @@
     "static/media/firstScreenImage_1170x658.9124c2dc.webp": "/logistic-react/static/media/firstScreenImage_1170x658.9124c2dc.webp",
     "static/media/firstScreenImage_1920x970.162f59b1.webp": "/logistic-react/static/media/firstScreenImage_1920x970.162f59b1.webp",
     "static/media/firstScreenImage_1920x970.5c3bb1a5.jpg": "/logistic-react/static/media/firstScreenImage_1920x970.5c3bb1a5.jpg",
-    "static/media/firstScreenImage_750x562.856e31bc.jpg": "/logistic-react/static/media/firstScreenImage_750x562.856e31bc.jpg",
-    "static/media/firstScreenImage_750x562.9c140349.webp": "/logistic-react/static/media/firstScreenImage_750x562.9c140349.webp",
     "static/media/firstScreenImage_970x545.bad1b5e6.webp": "/logistic-react/static/media/firstScreenImage_970x545.bad1b5e6.webp",
     "static/media/firstScreenImage_970x545.ded64b80.jpg": "/logistic-react/static/media/firstScreenImage_970x545.ded64b80.jpg",
     "static/media/photo_1.871c5628.jpg": "/logistic-react/static/media/photo_1.871c5628.jpg",
@@ -62,7 +60,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a38e167f.js",
-    "static/js/2.cec128a5.chunk.js",
-    "static/js/main.3528aa33.chunk.js"
+    "static/js/2.a8935a1a.chunk.js",
+    "static/js/main.717928a6.chunk.js"
   ]
 }

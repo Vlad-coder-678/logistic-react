@@ -2,7 +2,6 @@
   "short_name": "Logistiq App",
   "name": "Logistiq React App",
   "start_url": "/",
-  "permissions-policy": "interest-cohort=()",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
