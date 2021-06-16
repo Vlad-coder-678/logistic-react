@@ -7,6 +7,7 @@ import {
   PriceSection,
   TestimonialsSection,
   GallerySection,
+  OurTransportSection,
   // SchemeOfWorkSection,
   // StockAndCounterSection,
   AppealSection,
@@ -22,6 +23,7 @@ const App = () => {
         <AttainmentSection />
         <PriceSection />
         <TestimonialsSection />
+        <OurTransportSection />
         <GallerySection />
         {/* <SchemeOfWorkSection /> */}
         {/* <StockAndCounterSection /> */}

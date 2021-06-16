@@ -1,7 +1,7 @@
 import React from "react";
 
-import firstScreenImage750jpg from "../assets/images/firstScreenSection/firstScreenImage_750x562.jpg";
-import firstScreenImage750webp from "../assets/images/firstScreenSection/firstScreenImage_750x562.webp";
+// import firstScreenImage750jpg from "../assets/images/firstScreenSection/firstScreenImage_750x562.jpg";
+// import firstScreenImage750webp from "../assets/images/firstScreenSection/firstScreenImage_750x562.webp";
 import firstScreenImage970jpg from "../assets/images/firstScreenSection/firstScreenImage_970x545.jpg";
 import firstScreenImage970webp from "../assets/images/firstScreenSection/firstScreenImage_970x545.webp";
 import firstScreenImage1170jpg from "../assets/images/firstScreenSection/firstScreenImage_1170x658.jpg";
@@ -196,11 +196,11 @@ const FirstScreenSection = () => {
       <CssBaseline />
       <picture className={classes.firstScreen_bg}>
         <source
-          srcSet={`${firstScreenImage1920webp} 1920w, ${firstScreenImage1170webp} 1280w, ${firstScreenImage970webp} 960w, ${firstScreenImage750webp} 600w`}
+          srcSet={`${firstScreenImage1920webp} 1920w, ${firstScreenImage1170webp} 1280w, ${firstScreenImage970webp} 960w, ${firstScreenImage970webp} 600w`}
           type="image/webp"
         />
         <source
-          srcSet={`${firstScreenImage1920jpg} 1920w, ${firstScreenImage1170jpg} 1280w, ${firstScreenImage970jpg} 960w, ${firstScreenImage750jpg} 600w`}
+          srcSet={`${firstScreenImage1920jpg} 1920w, ${firstScreenImage1170jpg} 1280w, ${firstScreenImage970jpg} 960w, ${firstScreenImage970jpg} 600w`}
         />
         <img
           src={firstScreenImage1170jpg}

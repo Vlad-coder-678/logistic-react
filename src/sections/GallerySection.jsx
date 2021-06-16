@@ -1,23 +1,5 @@
 import React from "react";
 import {
-  ourTransport_1,
-  ourTransport_2,
-  ourTransport_3,
-  ourTransport_4,
-  ourTransport_5,
-  ourTransport_6,
-  ourTransport_7,
-  ourTransport_8,
-  ourTransport_9,
-  ourTransport_10,
-  ourTransport_11,
-  ourTransport_12,
-  ourTransport_13,
-  ourTransport_14,
-  ourTransport_15,
-  ourTransport_16,
-} from "../assets/images/gallerySection/ourTransport";
-import {
   abkhazia_1,
   abkhazia_2,
   abkhazia_3,
@@ -58,75 +40,6 @@ import { autoPlay } from "react-swipeable-views-utils";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const gallery = [
-  {
-    name: "Наш ранспорт",
-    photos: [
-      {
-        imgPath: ourTransport_1,
-        imgAlt: "ourTransport_1",
-      },
-      {
-        imgPath: ourTransport_2,
-        imgAlt: "ourTransport_2",
-      },
-      {
-        imgPath: ourTransport_3,
-        imgAlt: "ourTransport_3",
-      },
-      {
-        imgPath: ourTransport_4,
-        imgAlt: "ourTransport_4",
-      },
-      {
-        imgPath: ourTransport_5,
-        imgAlt: "ourTransport_5",
-      },
-      {
-        imgPath: ourTransport_6,
-        imgAlt: "ourTransport_6",
-      },
-      {
-        imgPath: ourTransport_7,
-        imgAlt: "ourTransport_7",
-      },
-      {
-        imgPath: ourTransport_8,
-        imgAlt: "ourTransport_8",
-      },
-      {
-        imgPath: ourTransport_9,
-        imgAlt: "ourTransport_9",
-      },
-      {
-        imgPath: ourTransport_10,
-        imgAlt: "ourTransport_10",
-      },
-      {
-        imgPath: ourTransport_11,
-        imgAlt: "ourTransport_11",
-      },
-      {
-        imgPath: ourTransport_12,
-        imgAlt: "ourTransport_12",
-      },
-      {
-        imgPath: ourTransport_13,
-        imgAlt: "ourTransport_13",
-      },
-      {
-        imgPath: ourTransport_14,
-        imgAlt: "ourTransport_14",
-      },
-      {
-        imgPath: ourTransport_15,
-        imgAlt: "ourTransport_15",
-      },
-      {
-        imgPath: ourTransport_16,
-        imgAlt: "ourTransport_16",
-      },
-    ],
-  },
   {
     name: "Абхазия. Апрель 2019",
     photos: [
@@ -253,8 +166,7 @@ const GallerySection = () => {
   const classes = useStyles();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
-  // const [maxSteps, setMaxSteps] = React.useState(1);
-  const maxSteps = gallery.length;
+  // const maxSteps = gallery.length;
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -267,6 +179,7 @@ const GallerySection = () => {
   const handleStepChange = (step) => {
     setActiveStep(step);
   };
+
 
   return (
     <Box name={"gallerySection"} className={classes.gallerySection}>
@@ -283,7 +196,6 @@ const GallerySection = () => {
         </Box>
         <Box variant="div" className={classes.gallery__content}>
           {gallery.map((item, index) => {
-            // setMaxSteps(item.photos.length);
             return (
               <Box variant="div" className={classes.gallery__line}>
                 <Typography
@@ -313,7 +225,7 @@ const GallerySection = () => {
                   ))}
                 </AutoPlaySwipeableViews>
                 <MobileStepper
-                  steps={maxSteps}
+                  steps={item.photos.length}
                   position="static"
                   variant="text"
                   activeStep={activeStep}
@@ -321,7 +233,7 @@ const GallerySection = () => {
                     <Button
                       size="small"
                       onClick={handleNext}
-                      disabled={activeStep === maxSteps - 1}
+                      disabled={activeStep === item.photos.length - 1}
                     >
                       Next
                       {theme.direction === "rtl" ? (

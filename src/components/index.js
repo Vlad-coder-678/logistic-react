@@ -5,3 +5,4 @@ export { default as SocialComponent } from "./SocialComponent";
 export { default as ButtonContactsComponent } from "./ButtonContactsComponent";
 export { default as NavigationComponent } from "./NavigationComponent";
 export { default as CardShemeOfWorks } from "./CardShemeOfWorks";
+export { default as GalleryLineComponent } from "./GalleryLineComponent";

@@ -7,6 +7,7 @@ export { default as PriceSection } from "./PriceSection";
 export { default as TestimonialsSection } from "./TestimonialsSection";
 export { default as StockAndCounterSection } from "./StockAndCounterSection";
 export { default as SchemeOfWorkSection } from "./SchemeOfWorkSection";
+export { default as OurTransportSection } from "./OurTransportSection";
 export { default as GallerySection } from "./GallerySection";
 export { default as AppealSection } from "./AppealSection";
 
