@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/logistic-react/static/js/main.717928a6.chunk.js",
-    "main.js.map": "/logistic-react/static/js/main.717928a6.chunk.js.map",
+    "main.js": "/logistic-react/static/js/main.75b86245.chunk.js",
+    "main.js.map": "/logistic-react/static/js/main.75b86245.chunk.js.map",
     "runtime-main.js": "/logistic-react/static/js/runtime-main.a38e167f.js",
     "runtime-main.js.map": "/logistic-react/static/js/runtime-main.a38e167f.js.map",
-    "static/js/2.a8935a1a.chunk.js": "/logistic-react/static/js/2.a8935a1a.chunk.js",
-    "static/js/2.a8935a1a.chunk.js.map": "/logistic-react/static/js/2.a8935a1a.chunk.js.map",
+    "static/js/2.929492d1.chunk.js": "/logistic-react/static/js/2.929492d1.chunk.js",
+    "static/js/2.929492d1.chunk.js.map": "/logistic-react/static/js/2.929492d1.chunk.js.map",
     "index.html": "/logistic-react/index.html",
-    "static/js/2.a8935a1a.chunk.js.LICENSE.txt": "/logistic-react/static/js/2.a8935a1a.chunk.js.LICENSE.txt",
+    "static/js/2.929492d1.chunk.js.LICENSE.txt": "/logistic-react/static/js/2.929492d1.chunk.js.LICENSE.txt",
     "static/media/Photo_1.43d76957.jpg": "/logistic-react/static/media/Photo_1.43d76957.jpg",
     "static/media/Photo_2.6bd0e5f6.jpg": "/logistic-react/static/media/Photo_2.6bd0e5f6.jpg",
     "static/media/Photo_3.207c16a1.jpg": "/logistic-react/static/media/Photo_3.207c16a1.jpg",
@@ -24,7 +24,6 @@
     "static/media/avito_9.c3d64377.jpg": "/logistic-react/static/media/avito_9.c3d64377.jpg",
     "static/media/bg.15992231.jpg": "/logistic-react/static/media/bg.15992231.jpg",
     "static/media/driver_1.414b25d5.jpg": "/logistic-react/static/media/driver_1.414b25d5.jpg",
-    "static/media/driver_2.92e9f695.jpg": "/logistic-react/static/media/driver_2.92e9f695.jpg",
     "static/media/driver_3.e9ca320b.jpg": "/logistic-react/static/media/driver_3.e9ca320b.jpg",
     "static/media/firstScreenImage_1170x658.7e407239.jpg": "/logistic-react/static/media/firstScreenImage_1170x658.7e407239.jpg",
     "static/media/firstScreenImage_1170x658.9124c2dc.webp": "/logistic-react/static/media/firstScreenImage_1170x658.9124c2dc.webp",
@@ -34,17 +33,14 @@
     "static/media/firstScreenImage_970x545.ded64b80.jpg": "/logistic-react/static/media/firstScreenImage_970x545.ded64b80.jpg",
     "static/media/photo_1.871c5628.jpg": "/logistic-react/static/media/photo_1.871c5628.jpg",
     "static/media/photo_1.fdb1a416.jpg": "/logistic-react/static/media/photo_1.fdb1a416.jpg",
-    "static/media/photo_2.14ff919b.jpg": "/logistic-react/static/media/photo_2.14ff919b.jpg",
+    "static/media/photo_2.5a949365.jpg": "/logistic-react/static/media/photo_2.5a949365.jpg",
     "static/media/photo_2.9c4bc0fb.jpg": "/logistic-react/static/media/photo_2.9c4bc0fb.jpg",
     "static/media/photo_3.6629c938.jpg": "/logistic-react/static/media/photo_3.6629c938.jpg",
     "static/media/photo_3.c32bc6b3.jpg": "/logistic-react/static/media/photo_3.c32bc6b3.jpg",
-    "static/media/photo_4.061718fe.jpg": "/logistic-react/static/media/photo_4.061718fe.jpg",
     "static/media/photo_4.0aa69a1b.jpg": "/logistic-react/static/media/photo_4.0aa69a1b.jpg",
-    "static/media/photo_5.6e91af67.jpg": "/logistic-react/static/media/photo_5.6e91af67.jpg",
-    "static/media/photo_5.cab62e03.jpg": "/logistic-react/static/media/photo_5.cab62e03.jpg",
+    "static/media/photo_5.93169a32.jpg": "/logistic-react/static/media/photo_5.93169a32.jpg",
+    "static/media/photo_5.ca224f99.jpg": "/logistic-react/static/media/photo_5.ca224f99.jpg",
     "static/media/photo_6.180ef946.jpg": "/logistic-react/static/media/photo_6.180ef946.jpg",
-    "static/media/photo_6.ce20b265.jpg": "/logistic-react/static/media/photo_6.ce20b265.jpg",
-    "static/media/photo_7.88fc434c.jpg": "/logistic-react/static/media/photo_7.88fc434c.jpg",
     "static/media/schemeOfWork__section-handshake.c869a619.png": "/logistic-react/static/media/schemeOfWork__section-handshake.c869a619.png",
     "static/media/schemeOfWork__section-map.3d1ec0ac.png": "/logistic-react/static/media/schemeOfWork__section-map.3d1ec0ac.png",
     "static/media/sprinter_1.dbe588df.jpg": "/logistic-react/static/media/sprinter_1.dbe588df.jpg",
@@ -60,7 +56,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a38e167f.js",
-    "static/js/2.a8935a1a.chunk.js",
-    "static/js/main.717928a6.chunk.js"
+    "static/js/2.929492d1.chunk.js",
+    "static/js/main.75b86245.chunk.js"
   ]
 }
