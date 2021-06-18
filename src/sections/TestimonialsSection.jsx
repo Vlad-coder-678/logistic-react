@@ -21,10 +21,10 @@ import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 
 import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
+// import { autoPlay } from "react-swipeable-views-utils";
 import CardTestimonial from "../components/CardTestimonial";
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const testimonials = [
   {
@@ -107,7 +107,7 @@ const TestimonialsSection = () => {
           </Typography>
         </Box>
         <Box className={classes.testimonials__content}>
-          <AutoPlaySwipeableViews
+          <SwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
             index={activeStep}
             onChangeIndex={handleStepChange}
@@ -118,7 +118,7 @@ const TestimonialsSection = () => {
                 <CardTestimonial card={item} />
               </div>
             ))}
-          </AutoPlaySwipeableViews>
+          </SwipeableViews>
           <MobileStepper
             steps={maxSteps}
             position="static"

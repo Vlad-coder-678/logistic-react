@@ -188,11 +188,7 @@ const useStyles = makeStyles((theme) => ({
 const FirstScreenSection = () => {
   const classes = useStyles();
   return (
-    <Box
-      variant="div"
-      name="firstScreen"
-      className={classes.section__firstScreen}
-    >
+    <Box variant="div" className={classes.section__firstScreen}>
       <CssBaseline />
       <picture className={classes.firstScreen_bg}>
         <source
@@ -234,7 +230,11 @@ const FirstScreenSection = () => {
             >
               по Крыму и всей России
             </Typography>
-            <Button variant="contained" className={classes.firstScreen__button}>
+            <Button
+              variant="contained"
+              href="#services"
+              className={classes.firstScreen__button}
+            >
               подробнее..
             </Button>
           </Grid>

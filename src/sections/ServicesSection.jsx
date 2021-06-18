@@ -48,11 +48,7 @@ const cards = [
 const ServicesSection = () => {
   const classes = useStyles();
   return (
-    <Box
-      variant="div"
-      name={"servicesSection"}
-      className={classes.servicesSection}
-    >
+    <Box variant="div" id="services" className={classes.servicesSection}>
       <CssBaseline />
       <Container fixed>
         <Box component="div" p={3}>

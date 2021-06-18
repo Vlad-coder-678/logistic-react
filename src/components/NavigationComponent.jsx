@@ -71,10 +71,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const nav = [
-  { text: "Главная", href: "#firstScreen", icon: <HomeIcon /> },
-  { text: "Услуги", href: "#servicesSection", icon: <ListAltIcon /> },
-  { text: "Прайс", href: "#pricesSection", icon: <LocalOfferIcon /> },
-  { text: "Контакты", href: "#contactsSection", icon: <ContactsIcon /> },
+  { text: "Главная", href: "#top", icon: <HomeIcon /> },
+  { text: "Услуги", href: "#services", icon: <ListAltIcon /> },
+  { text: "Прайс", href: "#price", icon: <LocalOfferIcon /> },
+  { text: "Контакты", href: "#contacts", icon: <ContactsIcon /> },
 ];
 
 const NavigationComponent = () => {
@@ -83,8 +83,8 @@ const NavigationComponent = () => {
     <Box className={classes.buttonContainer}>
       {nav.map((item) => (
         <Button
-          key={item.text}
           href={item.href}
+          key={item.text}
           className={classes.buttonNavLink}
         >
           <Box className={classes.buttonInnerNavLink}>

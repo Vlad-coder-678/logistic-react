@@ -77,7 +77,7 @@ const cards = [
 const PriceSection = () => {
   const classes = useStyles();
   return (
-    <Box varian="div" className={classes.section__price}>
+    <Box varian="div" id="price" className={classes.section__price}>
       <Box variant="div" className={classes.price__bgWrapper}>
         <img
           src={bg}

@@ -301,15 +301,28 @@ const OurTransportSection = () => {
                 variant="div"
                 className={classes.slider__imageWrapper}
               >
+                {/* {gallery.photos
+                  .filter((index) => index === curr - 1)
+                  .map((item) => (
+                    <img
+                      key={item.imgDesc}
+                      src={item.imgPath}
+                      alt={item.imgDesc}
+                      className={classes.slider__image}
+                    />
+                  ))} */}
                 {gallery.photos.map((item, index) => {
                   if (index === curr - 1) {
                     return (
                       <img
+                        key={item.imgDesc}
                         src={item.imgPath}
                         alt={item.imgDesc}
                         className={classes.slider__image}
                       />
                     );
+                  } else {
+                    return null;
                   }
                 })}
               </Box>
@@ -319,11 +332,14 @@ const OurTransportSection = () => {
                 if (index === curr) {
                   return (
                     <img
+                      key={item.imgDesc}
                       src={item.imgPath}
                       alt={item.imgDesc}
                       className={classes.slider__image}
                     />
                   );
+                } else {
+                  return null;
                 }
               })}
             </Box>
@@ -337,11 +353,14 @@ const OurTransportSection = () => {
                   if (index === curr + 1) {
                     return (
                       <img
+                        key={item.imgDesc}
                         src={item.imgPath}
                         alt={item.imgDesc}
                         className={classes.slider__image}
                       />
                     );
+                  } else {
+                    return null;
                   }
                 })}
               </Box>

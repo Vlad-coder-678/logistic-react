@@ -28,7 +28,6 @@ const App = () => {
         {/* <SchemeOfWorkSection /> */}
         {/* <StockAndCounterSection /> */}
         <AppealSection />
-        {/* <FooterSection /> */}
       </main>
     </div>
   );

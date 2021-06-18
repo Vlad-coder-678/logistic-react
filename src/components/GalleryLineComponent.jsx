@@ -140,8 +140,7 @@ const GalleryLineComponent = () => {
   const classes = useStyles();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
-  // const [maxSteps, setMaxSteps] = React.useState(1);
-  // const maxSteps = gallery.length;
+  const maxSteps = gallery.photos.length;
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -178,7 +177,7 @@ const GalleryLineComponent = () => {
         ))}
       </AutoPlaySwipeableViews>
       <MobileStepper
-        steps={gallery.photos.length}
+        steps={maxSteps}
         position="static"
         variant="text"
         activeStep={activeStep}
@@ -186,7 +185,7 @@ const GalleryLineComponent = () => {
           <Button
             size="small"
             onClick={handleNext}
-            disabled={activeStep === gallery.photos.length - 1}
+            disabled={activeStep === maxSteps - 1}
           >
             Next
             {theme.direction === "rtl" ? (

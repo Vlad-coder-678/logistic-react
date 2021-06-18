@@ -2,14 +2,10 @@ import React from "react";
 import {
   abkhazia_1,
   abkhazia_2,
-  abkhazia_3,
-  abkhazia_4,
   abkhazia_5,
-  abkhazia_6,
 } from "../assets/images/gallerySection/abkhazia_04.19";
 import {
   sochi_1,
-  sochi_2,
   sochi_3,
   sochi_4,
   sochi_5,
@@ -17,102 +13,84 @@ import {
   sochi_7,
   sochi_8,
   sochi_9,
-  sochi_10,
 } from "../assets/images/gallerySection/sochi_08.18";
 
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-import {
-  Box,
-  Button,
-  Container,
-  CssBaseline,
-  MobileStepper,
-  Typography,
-} from "@material-ui/core";
+import { Box, Container, CssBaseline, Typography } from "@material-ui/core";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
-import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
+// import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
+// import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 
 const gallery = [
   {
-    name: "Абхазия. Апрель 2019",
-    photos: [
-      {
-        imgPath: abkhazia_1,
-        imgAlt: "abkhazia_1",
-      },
-      {
-        imgPath: abkhazia_2,
-        imgAlt: "abkhazia_2",
-      },
-      {
-        imgPath: abkhazia_3,
-        imgAlt: "abkhazia_3",
-      },
-      {
-        imgPath: abkhazia_4,
-        imgAlt: "abkhazia_4",
-      },
-      {
-        imgPath: abkhazia_5,
-        imgAlt: "abkhazia_5",
-      },
-      {
-        imgPath: abkhazia_6,
-        imgAlt: "abkhazia_6",
-      },
-    ],
+    desc: "Абхазия",
+    date: "Апрель 2019",
+    imgPath: abkhazia_1,
+    imgDesc: "abkhazia_1",
   },
   {
-    name: "Сочи. Август 2018",
-    photos: [
-      {
-        imgPath: sochi_1,
-        imgAlt: "sochi_1",
-      },
-      {
-        imgPath: sochi_2,
-        imgAlt: "sochi_2",
-      },
-      {
-        imgPath: sochi_3,
-        imgAlt: "sochi_3",
-      },
-      {
-        imgPath: sochi_4,
-        imgAlt: "sochi_4",
-      },
-      {
-        imgPath: sochi_5,
-        imgAlt: "sochi_5",
-      },
-      {
-        imgPath: sochi_6,
-        imgAlt: "sochi_6",
-      },
-      {
-        imgPath: sochi_7,
-        imgAlt: "sochi_7",
-      },
-      {
-        imgPath: sochi_8,
-        imgAlt: "sochi_8",
-      },
-      {
-        imgPath: sochi_9,
-        imgAlt: "sochi_9",
-      },
-      {
-        imgPath: sochi_10,
-        imgAlt: "sochi_10",
-      },
-    ],
+    desc: "Абхазия",
+    date: "Апрель 2019",
+    imgPath: abkhazia_2,
+    imgDesc: "abkhazia_2",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_1,
+    imgDesc: "sochi_1",
+  },
+  {
+    desc: "Абхазия",
+    date: "Август 2018",
+    imgPath: abkhazia_5,
+    imgDesc: "abkhazia_5",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_3,
+    imgDesc: "sochi_3",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_4,
+    imgDesc: "sochi_4",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_5,
+    imgDesc: "sochi_5",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_6,
+    imgDesc: "sochi_6",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_7,
+    imgDesc: "sochi_7",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_8,
+    imgDesc: "sochi_8",
+  },
+  {
+    desc: "Сочи",
+    date: "Август 2018",
+    imgPath: sochi_9,
+    imgDesc: "sochi_9",
   },
 ];
 
@@ -125,61 +103,83 @@ const useStyles = makeStyles((theme) => ({
   gallery__content: {
     maxWidth: "100%",
   },
-  gallery__line: {
-    borderRadius: "10px",
-    backgroundColor: theme.palette.background.white,
-    borderTop: "5px solid #13c3c9",
-    margin: "20px auto",
-  },
-  gallery__lineTitle: {
-    padding: "10px",
+  gallery__trackWrap: {
+    position: "relative",
+    overflow: "hidden",
+    backgroundColor: "#fff",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.up("xs")]: {
+      height: "220px",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "420px",
+    },
   },
   gallery__track: {
-    height: "250px",
-    overflow: "hidden",
-    margin: "auto 10px",
-  },
-  gallery__photoWrapper: {
-    position: "relative",
-    top: "0",
-    left: "0",
-    height: "250px",
-    width: "350px",
-    borderRadius: "10px",
-    overflow: "hidden",
-    // border: "2px solid red",
-  },
-  gallery__photo: {
-    // border: "2px solid red",
     position: "absolute",
-    left: "50%",
+    top: "0",
+    display: "flex",
+    flexWrap: "wrap",
+    cursor: "pointer",
+    [theme.breakpoints.up("xs")]: {
+      width: "200%",
+      left: "-30%",
+    },
+    [theme.breakpoints.up("lg")]: {
+      left: "-10%",
+    },
+  },
+  gallery__buttonText: {
+    position: "absolute",
+    backgroundColor: "#fff",
+    boxShadow: "2px 2px 5px 0px rgba(0, 0, 0, 0.5)",
+    borderRadius: "20px",
+    padding: "0 10px",
     top: "50%",
+    left: "50%",
     transform: "translate(-50%, -50%)",
-    minHeight: "100%",
-    maxHeight: "150%",
-    minWidth: "100%",
-    maxWidth: "150%",
+    color: "#13c3c9",
+    fontSize: "30px",
+    cursor: "pointer",
+    zIndex: "1",
+  },
+  gallery__imgWrap: {
+    margin: "5px",
+    overflow: "hidden",
+    [theme.breakpoints.up("xs")]: {
+      height: "100px",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "200px",
+    },
+  },
+  gallery__img: {
+    height: "100%",
+  },
+  slider__imgWrapper: {
+    position: "relative",
+    height: "100%",
+    overflow: "hidden",
+  },
+  slider__img: {
+    position: "absolute",
+    top: "0",
+    left: "50%",
+    height: "93%",
+    transform: "translateX(-50%)",
+    zIndex: "-1",
   },
 }));
 
 const GallerySection = () => {
   const classes = useStyles();
-  const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
-  // const maxSteps = gallery.length;
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  const [handleOpen, setHandleOpen] = React.useState({ open: false });
+  const handleClick = () => {
+    setHandleOpen({ open: true });
   };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleStepChange = (step) => {
-    setActiveStep(step);
-  };
-
+  const isMobile = useMediaQuery("(max-width:600px)");
 
   return (
     <Box name={"gallerySection"} className={classes.gallerySection}>
@@ -195,72 +195,73 @@ const GallerySection = () => {
           </Typography>
         </Box>
         <Box variant="div" className={classes.gallery__content}>
-          {gallery.map((item, index) => {
-            return (
-              <Box variant="div" className={classes.gallery__line}>
-                <Typography
-                  variant="body1"
-                  className={classes.gallery__lineTitle}
+          <Box
+            variant="div"
+            onClick={handleClick}
+            className={classes.gallery__trackWrap}
+          >
+            <Box variant="div" className={classes.gallery__button}>
+              <Typography
+                variant="body1"
+                className={classes.gallery__buttonText}
+              >
+                Смотреть
+              </Typography>
+            </Box>
+            <Box variant="div" className={classes.gallery__track}>
+              {gallery.map((item, index) => (
+                <Box
+                  key={item.imgDesc}
+                  variant="div"
+                  className={classes.gallery__imgWrap}
                 >
-                  {item.name}
-                </Typography>
-                <AutoPlaySwipeableViews
-                  axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-                  index={activeStep}
-                  onChangeIndex={handleStepChange}
-                  enableMouseEvents
-                  className={classes.gallery__track}
-                >
-                  {item.photos.map((item) => (
-                    <div
-                      key={item.imgAlt}
-                      className={classes.gallery__photoWrapper}
-                    >
-                      <img
-                        src={item.imgPath}
-                        alt={item.imgAlt}
-                        className={classes.gallery__photo}
-                      />
-                    </div>
-                  ))}
-                </AutoPlaySwipeableViews>
-                <MobileStepper
-                  steps={item.photos.length}
-                  position="static"
-                  variant="text"
-                  activeStep={activeStep}
-                  nextButton={
-                    <Button
-                      size="small"
-                      onClick={handleNext}
-                      disabled={activeStep === item.photos.length - 1}
-                    >
-                      Next
-                      {theme.direction === "rtl" ? (
-                        <KeyboardArrowLeft />
-                      ) : (
-                        <KeyboardArrowRight />
-                      )}
-                    </Button>
-                  }
-                  backButton={
-                    <Button
-                      size="small"
-                      onClick={handleBack}
-                      disabled={activeStep === 0}
-                    >
-                      {theme.direction === "rtl" ? (
-                        <KeyboardArrowRight />
-                      ) : (
-                        <KeyboardArrowLeft />
-                      )}
-                      Back
-                    </Button>
-                  }
-                />
-              </Box>
-            );
-          })}
+                  <img
+                    src={item.imgPath}
+                    alt={item.imgDesc}
+                    className={classes.gallery__img}
+                  />
+                </Box>
+              ))}
+            </Box>
+          </Box>
+          <AutoRotatingCarousel
+            open={handleOpen.open}
+            onClose={() => {
+              setHandleOpen({ open: false });
+            }}
+            onStart={() => {
+              setHandleOpen({ open: false });
+            }}
+            mobile={isMobile}
+            autoplay={true}
+            className={classes.slider}
+          >
+            {gallery.map((item) => (
+              <Slide
+                key={item.imgDesc}
+                mediaBackgroundStyle={{
+                  backgroundColor: "transparent",
+                }}
+                media={
+                  <img
+                    src={item.imgPath}
+                    alt={item.imgDesc}
+                    className={classes.slider__img}
+                  />
+                }
+                // mediaStyle={{ border: "2px solid red"}}
+                title={item.desc}
+                // titleStyle={{
+                //   color: "red",
+                // }}
+                subtitle={item.date}
+                // subtitleStyle={{
+                //   border: "2px solid red",
+                // }}
+                className={classes.slider__imgWrapper}
+              ></Slide>
+            ))}
+          </AutoRotatingCarousel>
         </Box>
       </Container>
     </Box>

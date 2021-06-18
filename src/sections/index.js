@@ -10,5 +10,3 @@ export { default as SchemeOfWorkSection } from "./SchemeOfWorkSection";
 export { default as OurTransportSection } from "./OurTransportSection";
 export { default as GallerySection } from "./GallerySection";
 export { default as AppealSection } from "./AppealSection";
-
-export { default as FooterSection } from "./FooterSection";
